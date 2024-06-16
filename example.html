@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+        <link rel="icon" href="planet.jpg" type="image/x-icon">
+        <style>
+            body{
+               background-color:black;
+               background-image:url(fronx\ colored.jpg);
+               background-repeat: no-repeat;
+               background-size:cover;
+               background-attachment:fixed ;
+               align-items: center;
+            }
+            h1{
+                color: white;
+                font-family:'Courier New', Courier, monospace;
+                align-items: center;
+                margin-left:540px;
+            }
+            pre{
+                color: white;
+                font-family:'Courier New', Courier, monospace;
+                text-align: center;
+                justify-content: center;
+            }
+            .typing-container {
+                font-size: 36px; 
+                display: flex;
+                align-items: center;
+            }
+            .cursor {
+                display: inline-block;
+                width: 10px;
+                background-color:black;
+                animation: blink 0.7s step-end infinite;
+            }
+            @keyframes blink {
+                from, to { background-color: transparent; }
+                50% { background-color:black; }
+            }
+        </style>
+    </head>
+    <body >
+        <h1 class="typing-container">
+            <span id="typing-text"></span>
+            <span class="cursor" id="cursor"></span></h1>
+       <pre>
+        The Maruti Suzuki Fronx is a compact SUV that reflects the brand's commitment to innovation and consumer satisfaction.
+        Blending the rugged appeal of an SUV with the sleek design elements of a contemporary vehicle,
+        the Fronx caters to the evolving needs of urban drivers.
+        It boasts a modern aesthetic, featuring a bold front grille, sharp LED headlamps,
+         and a streamlined silhouette that ensures a striking presence on the road.
+        Under the hood, the Fronx is equipped with efficient and reliable engine options that promise a balanced performance, 
+        making it suitable for both city commutes and weekend getaways. Inside, the car offers a comfortable and tech-savvy cabin, 
+        equipped with advanced infotainment systems, ample storage spaces, and high-quality materials that enhance the overall driving experience. 
+        Safety has not been overlooked, with the Fronx integrating multiple safety features such as airbags, 
+        ABS with EBD, and advanced driver assistance systems.
+        As part of Maruti Suzuki's diverse lineup, the Fronx stands out by offering a blend of style, functionality, and affordability, 
+        making it an appealing choice for a wide range of consumers.
+       </pre>
+       <p id="demo"></p>
+    </body>
+    <script src="example.js"></script>
+</html>
